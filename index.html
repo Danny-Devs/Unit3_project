@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="title-bar bold">The Code Review</div>
+
+    <div id="container">
+      <header>
+        <!-- make p background-color dark blue. no margin. -->
+
+        <h1>Signup for our newsletter</h1>
+        <p>
+          Get the latest news on how your code is doing right in your inbox.
+        </p>
+      </header>
+
+      <div class="fat-hr"></div>
+      <div class="thin-hr"></div>
+
+      <main>
+        <form>
+          <fieldset>
+            <legend class="bold">Contact Information</legend>
+
+            <div class="form-item">
+              <label for="name">Full Name</label>
+              <input
+                type="text"
+                id="name"
+                name="user_name"
+                placeholder="Required"
+              />
+            </div>
+
+            <div class="form-item">
+              <label for="mail">Email Address</label>
+              <input
+                type="email"
+                id="mail"
+                name="user_email"
+                placeholder="Required"
+              />
+            </div>
+
+            <div class="form-item">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="user_number" />
+            </div>
+
+            <div class="form-item">
+              <label for="address">Street Address</label>
+              <input type="text" id="address" name="user_address" />
+            </div>
+
+            <div class="form-item">
+              <label for="city">City</label>
+              <input type="text" id="city" name="user_city" />
+            </div>
+
+            <div class="form-item">
+              <label for="state">State</label>
+              <select id="state" class="light">
+                <option value="">Choose State</option>
+                <option value="al">Alabama</option>
+                <option value="ca">California</option>
+                <option value="ny">New York</option>
+                <option value="wa">Washington</option>
+              </select>
+            </div>
+
+            <div class="form-item">
+              <label for="zip">Zip Code</label>
+              <input type="tel" id="zip" name="user_zip" class="zip-input"/>
+            </div>
+          </fieldset>
+
+          <div class="thin-hr"></div>
+
+          <fieldset>
+            <legend class="bold">Newsletter</legend>
+            <p>Select the newsletters you would like to receive</p>
+
+            <div class="form-item2">
+              <input type="checkbox" id="checkbox1" name="newsletters" />
+              <label for="checkbox1">HTML News</label>
+            </div>
+
+            <div class="form-item2">
+              <input type="checkbox" id="checkbox2" name="newsletters" />
+              <label for="checkbox2">CSS News</label>
+            </div>
+
+            <div class="form-item2">
+              <input type="checkbox" id="checkbox3" name="newsletters" />
+              <label for="checkbox3">Javascript News</label>
+            </div>
+
+            <p class="spacer-top">Newsletter format</p>
+
+            <div class="form-item2">
+              <input type="radio" id="radio1" name="formats" />
+              <label for="radio1">HTML</label>
+            </div>
+
+            <div class="form-item2">
+              <input type="radio" id="radio2" name="formats" />
+              <label for="radio2">Plain text</label>
+            </div>
+
+            <div class="form-item spacer-top">
+              <label for="msg">Other topics you'd like to hear about</label>
+              <textarea id="msg" name="user_message"></textarea>
+            </div>
+          </fieldset>
+
+          <button type="submit"><strong>Sign Up</strong></button>
+        </form>
+      </main>
+
+      <footer>
+        <p>&copy; 2021 Daniel Ahn</p>
+      </footer>
+    </div>
+  </body>
+</html>
