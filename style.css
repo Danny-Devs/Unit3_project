@@ -87,7 +87,7 @@ Other elements
 }
 
 .zip-input {
-  width: 40%;
+  width: 25%;
 }
 
 /* ============================
@@ -155,7 +155,7 @@ input[type=text], input[type=tel], input[type=email] {
   font-size: 1em;
 }
 
-input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus {
+input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea:focus, select:focus {
   border-radius: 5px;
   box-shadow: inset 0 0 0 2px rgb(79, 112, 106);
 }
@@ -208,7 +208,11 @@ Media Queries
     width: 85%;
   }
 
-  input[type=text], input[type=tel], input[type=email] {
+  .wide {
     width: 85%;
+  }
+
+  .zip-input {
+    width: 42.5%;
   }
 }
