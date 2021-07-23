@@ -87,7 +87,7 @@ Other elements
 }
 
 .zip-input {
-  width: 25%;
+  width: 50%;
 }
 
 /* ============================
@@ -213,6 +213,6 @@ Media Queries
   }
 
   .zip-input {
-    width: 42.5%;
+    width: 25%;
   }
 }
